@@ -8,4 +8,12 @@ options.add_experimental_option("detach", True)
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-driver.get("https://www.neuralnine.com/")
+driver.get("https://chat.openai.com/")
+
+"""links = driver.find_elements("xpath", "//a[@href]")
+
+for link in links:
+    if "Books" in link.get_attribute("innerHTML"):
+        link.click()"""
+
+
