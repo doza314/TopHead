@@ -8,7 +8,7 @@ options.add_experimental_option("detach", True)
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-driver.get("https://google.com/")
+driver.get("https://chat.openai.com/")
 
 """links = driver.find_elements("xpath", "//a[@href]")
 
