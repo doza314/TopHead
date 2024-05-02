@@ -29,6 +29,15 @@ input_box.send_keys("For each of these topics, generate a script of top 10 facts
 click_button = driver.find_element('xpath',"//button[@data-testid='send-button']")
 click_button.click()
 
+
 #Can't figure out how to keep browser open indefinitely so this will do for now
 driver.sleep(120)
+
+texts = driver.find_elements('xpath',"//p")
+listitems = driver.find_elements('xpath',"//li")
+
+for text in texts:
+    print(text.text)
+    for listitem in listitems:
+        print(listitem.text)
 
