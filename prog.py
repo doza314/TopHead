@@ -38,6 +38,7 @@ listitems = driver.find_elements('xpath',"//li")
 
 for text in texts:
     print(text.text)
-    for listitem in listitems:
-        print(listitem.text)
+    
+for listitem in listitems:
+    print(listitem.text)
 
