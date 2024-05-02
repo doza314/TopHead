@@ -1,4 +1,5 @@
 from seleniumbase import Driver
+from seleniumbase.config import settings
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
@@ -28,7 +29,6 @@ input_box.send_keys("For each of these topics, generate a script of top 10 facts
 click_button = driver.find_element('xpath',"//button[@data-testid='send-button']")
 click_button.click()
 
-# Send the message (press Enter)
-#input_box.send_keys(Keys.ENTER)
+#Can't figure out how to keep browser open indefinitely so this will do for now
+driver.sleep(120)
 
-driver.sleep(60)
